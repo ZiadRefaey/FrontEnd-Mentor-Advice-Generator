@@ -1,6 +1,7 @@
 .advice-generator-container {
   width: 95%;
   min-height: 315px;
+  min-width: 300px;
   max-width: 540px;
   margin: auto;
   color: white;
@@ -58,11 +59,19 @@ p {
   transition: 0.3s all;
   cursor: pointer;
 }
+
 .advice-generator-btn:hover {
-  transform: translate(-50%, 50%);
+  transform: translateX(-50%) translateY(50%);
   box-shadow: 0px 0px 25px 0px #53ffaa;
 }
+
 .advice-generator-btn img {
+  transform-origin: center center;
   width: 24px;
   height: 24px;
+  transition: 0.3s all;
+}
+
+.advice-generator-btn:hover img {
+  transform: rotate(90deg);
 }
